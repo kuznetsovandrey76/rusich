@@ -1,0 +1,35 @@
+.complex {
+    &__header {
+        font-size: 28px;
+    }
+}
+
+.sales {
+    display: inline-block;
+    background: #CB2323;
+    padding: .2rem .5rem;
+    color: #fff;
+    cursor: pointer;
+
+    &__link {        
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        display: flex;
+
+        &:hover {
+            border-bottom-color: rgba(166, 23, 68, 0.5);
+        }
+    }
+
+    &__icon {
+        display: flex;
+
+        &::after {
+            content: url('/img/sales.svg');
+            margin-left: .5rem;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-size: 18px 18px;
+        }
+    }
+}

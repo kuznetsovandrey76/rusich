@@ -1,0 +1,20 @@
+section.form
+    .container
+        .row
+            .col-lg-10.mx-auto
+                h1.c-white.mb-4 Записаться на консультацию
+                .row.mb-0 
+                    .col-md-12.col-lg-6 
+                        .mb-4
+                            input.form-control(required placeholder="Имя" type='text')
+                        .mb-4
+                            input.form-control(required placeholder="Телефон" type='tel')
+                        .mb-4
+                            input.form-control(required placeholder="Email для ответа" type='email')
+                    .col-md-12.col-lg-6.mb-4
+                        textarea.form-control(required name="", cols="30", rows="5" placeholder='Ваши вопросы')
+                        p.text-right.c-white.form-text Все поля обязательны для заполнения
+
+                a.btn.btn-large.form-btn.mb-4.mr-4 Отправить
+                div.c-white.d-inline-block.form-personal Нажимая «Отправить», я даю согласие на 
+                    a(href='/') обработку персональных данных

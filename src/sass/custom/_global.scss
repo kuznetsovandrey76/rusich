@@ -1,0 +1,134 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.main {
+    padding-top: 90px;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, input, textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 48px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 44px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+a {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    
+    &:hover {
+        text-decoration: none;
+        color: #A61744; 
+    }
+}
+
+
+
+// Project
+// .baloon__icon {
+//     &::before {
+//         content: url('/img/sprite.svg#baloon');
+//         display: inline-block;
+//         width: 17px;
+//     }
+// }
+
+// .project-item{
+//     display: flex;
+//     &__icon {
+//         width: 44px;
+//         margin-right: 1rem;
+//     }
+
+//     &__number {
+//         font-size: 40px;
+//         font-weight: 300;
+//         line-height: 1;
+//         margin-bottom: .25rem;
+//         white-space: nowrap;
+//     }
+// }
+
+
+
+.btn {    
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff !important;
+    white-space: normal;
+    background: linear-gradient(270.5deg, rgba(203, 35, 35, 0.74) -0.24%, rgba(170, 65, 65, 0) 98.72%), #A61744;
+}
+
+.btn-large {
+    padding: 1.1115rem 2.5rem;
+    font-size: 22px;
+}
+
+
+
+
+// COLORS
+.c-info {
+    color: #D0AE85;
+}
+.c-white {
+    color: white;
+}
+
+
+
+
+.figcaption {
+    font-size: 14px;
+    color: #bfbfbf;
+    margin-top: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

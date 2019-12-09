@@ -1,0 +1,107 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: #fff;
+    padding: .5rem 0;
+
+    &__description {
+        max-width: 330px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+        margin-bottom: 0;
+
+        &_underline {
+            border-bottom: 1px solid rgba(0,0,0,0.3);
+       }
+   }
+
+    &__menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: #303030;
+        text-align: center;
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        transition: height 0.3s, padding 0.3s;
+        z-index: 1000;
+
+        &-item {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }    
+
+        &-link {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            border-bottom: none;
+
+            &.active {
+                color: #A61744;
+                border-bottom: 5px solid #A61744;
+            }
+
+            &:hover {
+                border-bottom: 5px solid #A61744;;
+            }
+        }
+
+
+    }
+}
+
+
+// mobile menu
+.header__menu_active {
+    position: fixed;
+    right: 0;
+    left: 0;
+
+    & .menu-bar {
+        height: 100%;
+    }
+
+    & .header__menu {
+        height: 100%;
+        padding: 1.5rem;
+    }
+}
+
+
+.menu-bar {
+    border-bottom: none;
+    display: inline-block;
+    width: 30px;
+    vertical-align: -2px;
+    cursor: pointer;
+
+    &.active .menu-bar__stick {
+        background: #A61744;
+        &:nth-child(1) {
+            transform: translateY(8px) rotate(-45deg);
+       }
+        &:nth-child(2) {
+            opacity: 0;
+       }
+        &:nth-child(3) {
+            transform: translateY(-8px) rotate(45deg);
+       }
+   }
+    &__stick {
+        display: block;
+        height: 2px;
+        border-radius: 1px;
+        background: #101010;
+        transition: transform 0.15s;
+
+        &:not(:last-of-type) {
+            margin-bottom: 6px;
+       }
+   }
+}

@@ -1,0 +1,129 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    h1 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .header__menu {
+        top: 75px;
+    }
+    .main {
+        padding-top: 50px;
+    }
+
+    .banner {
+        height: 425px;
+    }
+
+    .banner-logo {
+        width: 190px;
+        height: 60px;
+    }
+
+    .about-bg {
+        min-height: 320px;
+    }
+    .about-info {
+        padding: 1rem;
+    }
+    .map-icon {
+        display: none;
+    }
+}
+
+// More than 576px
+@media (min-width: 576px) {
+    .header {
+        padding: 1rem 0;
+   }
+
+   .about-bg {
+        min-height: 620px;
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+
+  }
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width:1679.98px) {
+}
+
+// less than 1200px
+@media (max-width: 1200px) {
+    .header__menu {
+        overflow: hidden;
+   }
+    .header__menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+   }
+}
+
+// more than 1200px
+@media (min-width: 1200px) {
+
+    .header__menu {
+         position: static;
+         width: auto;
+         height: auto;
+         background: none;
+         box-shadow: none;
+         display: flex;
+         justify-content: space-between;
+         margin-left: auto;
+     }
+
+    .header__menu-item {
+        margin-bottom: 0;
+   }
+
+    .header__menu-item:not(:last-of-type) {
+        margin-right: 1rem;
+   }
+
+   .header__menu-link {
+       color: #101010;
+   }
+}
+
+
+
+// Extra extra large devices, more than 1680px
+@media (min-width: 1680px) {
+    .container {
+        max-width: 1620px;
+    }
+
+    .header__menu-item:not(:last-of-type) {
+        margin-right: 1.5rem;
+    }
+}    

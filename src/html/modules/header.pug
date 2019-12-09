@@ -1,0 +1,32 @@
+header.header
+    .container
+        .d-flex.align-items-center
+            a.d-block.mr-4(href="/")
+                img.header__logo(src="img/logo.svg", alt="logo")
+
+            p.header__description.mr-auto.d-none.d-md-block
+                    span.header__description_underline Девелопмент
+                    | , 
+                    span.header__description_underline проектирование
+                    | , 
+                    span.header__description_underline строительство
+                    | , 
+                    span.header__description_underline эксплуатация
+   
+            ul.header__menu
+                li.header__menu-item
+                    a.header__menu-link(href="/") О компании
+                li.header__menu-item
+                    a.header__menu-link.active(href="/") Проекты
+                li.header__menu-item
+                    a.header__menu-link(href="/") Контакты
+                li.header__menu-item
+                    a.header__menu-link(href="/") Вакансии
+                li.header__menu-item
+                    a.header__menu-link(href="/") Новости
+
+            .ml-auto.d-xl-none
+                a.menu-bar.menu-toggler
+                    span.menu-bar__stick 
+                    span.menu-bar__stick
+                    span.menu-bar__stick
