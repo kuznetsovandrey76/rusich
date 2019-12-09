@@ -8,7 +8,7 @@
         content: '';
         width: 35%;
         height: 60%;
-        background: url('./img/square-2.svg') no-repeat bottom center;
+        background: url($url + '/img/square-2.svg') no-repeat bottom center;
         bottom: 0;
         left: 46px;
         background-size: 100%;
